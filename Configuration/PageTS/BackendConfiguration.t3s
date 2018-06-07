@@ -1,0 +1,32 @@
+TCEFORM {
+	# todo LLL: for altLables 1-5
+	tt_content {
+		header_layout {
+			altLabels.0 = Standard Header h2
+			altLabels.1 = h1
+			altLabels.2 = h2
+			altLabels.3 = h3
+			altLabels.4 = h4
+			altLabels.5 = h5
+			addItems.7 = Header H2, unterstrichen
+		}
+		layout {
+			altLabels {
+				1 = video16/9
+				2 = video21/1
+				3 = video4/3
+			}
+			addItems.4 = video1/1
+			addItems.5 = Teaserbox
+			addItems.6 = Inhalt unten
+		}
+	}
+}
+
+TCEMAIN {
+	permissions {
+		groupid = 1
+	}
+}
+
+RTE.default.preset = ws_standard

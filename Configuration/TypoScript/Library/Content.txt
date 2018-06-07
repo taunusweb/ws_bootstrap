@@ -1,0 +1,57 @@
+# Image
+styles.content.textmedia.maxW = 1140
+styles.content.textmedia.maxWInText = 540
+
+# Image + Text
+styles.content.textmedia.linkWrap.width = 1200m
+styles.content.textmedia.linkWrap.height = 1200m
+
+# Lightbox
+styles.content.textmedia.linkWrap.lightboxEnabled = 1
+
+styles.content.loginform.pid = 0
+
+# cat=content/cTextmedia/c5; type=options[image-popup-vertical-fit,image-popup-fit-width,image-popup-no-margins]; label= CSS for magnificpopup.js
+styles.content.textmedia.linkWrap.lightboxCssClass = image-popup-vertical-fit
+
+
+############
+### PAGE ###
+############
+page {
+	theme {
+        heroslide {
+            # cat=wsbootstrap: theme/100/100; type=boolean; label=Heroslide: Enable to slide Hero-Unit
+            enable = 1
+			}
+	    copyright {
+            # cat=wsbootstrap: theme/100/110; type=boolean; label=Copyright: Show copyright information
+            enable = 1
+            # cat=wsbootstrap: theme/100/120; type=string; label=Copyrighttext: copyright text
+            text = Web-Services Ulrich Diehl
+    		}
+		megamenu {
+            # cat=wsbootstrap: theme/100/130; type=boolean; label=Megamenu: Show Megamenu instead of navbar
+            enable = 0
+           	}
+		skiplinks {
+            # cat=wsbootstrap: theme/100/140; type=boolean; label=Skiplinks: include Skiplinks in header
+            enable = 1
+          	}
+         search {
+            # cat=wsbootstrap: theme/100/150; type=boolean; label=Search: enable search
+            enable = 1
+            # cat=wsbootstrap: theme/100/160; type=string; label=Searchresults: pid of searchresults page
+            pid = 18
+
+         }
+         favicon {
+            # cat=wsbootstrap: theme/100/170; type=string; label=Favicon: file
+             file = typo3conf/ext/wsbootstrap/Resources/Public/Images/Icons/favicon.ico
+             		}
+         }
+
+		}
+
+
+
