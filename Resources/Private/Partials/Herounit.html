@@ -1,0 +1,13 @@
+
+<f:if condition="{settings.heroslide.enable}">
+	<f:then>
+<div class="container">
+	<f:cObject typoscriptObjectPath="lib.dynamicContentSlide" data="{colPos: '5'}" />
+</div>
+	</f:then>
+	<f:else>
+<div class="container">
+	<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '5'}" />
+</div>
+	</f:else>
+</f:if>
