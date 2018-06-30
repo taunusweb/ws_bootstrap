@@ -2,7 +2,7 @@ mod {
 	web_layout {
 		BackendLayouts {
 			default {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.default
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.default
 				config {
 					backend_layout {
 						colCount = 1
@@ -11,7 +11,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 									}
 								}
@@ -19,7 +19,7 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colPos = 0
 									}
 								}
@@ -27,7 +27,7 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 								}
@@ -37,10 +37,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/oneColumnNew.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/oneColumnNew.svg
 			}
 			oneColumnTwoColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnTwoColumnsFooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnTwoColumnsFooter
 				config {
 					backend_layout {
 						colCount = 2
@@ -49,7 +49,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 2
 									}
@@ -58,7 +58,7 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colPos = 0
 										colspan = 2
 									}
@@ -67,11 +67,11 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 								}
@@ -81,10 +81,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/oneColumnTwoColumnsFooterNew.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/oneColumnTwoColumnsFooterNew.svg
 			}
 			oneColumnThreeColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnThreeColumnsFooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnThreeColumnsFooter
 				config {
 					backend_layout {
 						colCount = 3
@@ -93,7 +93,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 3
 									}
@@ -102,7 +102,7 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colPos = 0
 										colspan = 3
 									}
@@ -111,15 +111,15 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 								}
@@ -129,10 +129,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/oneColumnThreeColumnsFooterNew.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/oneColumnThreeColumnsFooterNew.svg
 			}
 			oneColumnFourColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnFourColumnsFooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnFourColumnsFooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -141,7 +141,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -150,7 +150,7 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colPos = 0
 										colspan = 4
 									}
@@ -159,19 +159,19 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 									4 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
 										colPos = 13
 									}
 								}
@@ -181,10 +181,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/oneColumnFourColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/oneColumnFourColumnsFooter.svg
 			}
 			oneColumnSixColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnSixColumnsFooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.oneColumnSixColumnsFooter
 				config {
 					backend_layout {
 						colCount = 6
@@ -193,7 +193,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 6
 									}
@@ -202,7 +202,7 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colPos = 0
 										colspan = 6
 									}
@@ -211,27 +211,27 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 									4 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
 										colPos = 13
 									}
 									5 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer5
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer5
 										colPos = 13
 									}
 									6 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer6
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer6
 										colPos = 13
 									}
 								}
@@ -241,10 +241,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/oneColumnSixColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/oneColumnSixColumnsFooter.svg
 			}
 			twoColumnsLeftOneColumnFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftonecolumnfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftonecolumnfooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -253,7 +253,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -262,11 +262,11 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
 										colPos = 1
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 3
 										colPos = 0
 									}
@@ -275,7 +275,7 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 										colspan = 4
 									}
@@ -285,10 +285,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftOneColumnFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftOneColumnFooter.svg
 			}
 			twoColumnsLeftTwoColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnslefttwocolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnslefttwocolumnsfooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -297,7 +297,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -306,11 +306,11 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
 										colPos = 1
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 3
 										colPos = 0
 									}
@@ -319,12 +319,12 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 										colspan = 2
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 										colspan = 2
 									}
@@ -334,10 +334,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftTwoColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftTwoColumnsFooter.svg
 			}
 			twoColumnsLeftThreeColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftthreecolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftthreecolumnsfooter
 				config {
 					backend_layout {
 						colCount = 3
@@ -346,7 +346,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 3
 									}
@@ -355,11 +355,11 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
 										colPos = 1
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 2
 										colPos = 0
 									}
@@ -368,15 +368,15 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 								}
@@ -385,10 +385,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftThreeColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftThreeColumnsFooter.svg
 			}
 			twoColumnsLeftFourColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftfourcolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftfourcolumnsfooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -397,7 +397,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -406,11 +406,11 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
 										colPos = 1
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 3
 										colPos = 0
 									}
@@ -419,19 +419,19 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 									4 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
 										colPos = 13
 									}
 								}
@@ -440,10 +440,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftFourColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftFourColumnsFooter.svg
 			}
 			twoColumnsLeftSixColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftsixcolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsleftsixcolumnsfooter
 				config {
 					backend_layout {
 						colCount = 6
@@ -452,7 +452,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 6
 									}
@@ -461,12 +461,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.left
 										colPos = 1
 										colspan = 2
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 4
 										colPos = 0
 									}
@@ -475,27 +475,27 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 									4 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
 										colPos = 13
 									}
 									5 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer5
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer5
 										colPos = 14
 									}
 									6 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer6
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer6
 										colPos = 15
 									}
 								}
@@ -504,10 +504,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftSixColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsLeftSixColumnsFooter.svg
 			}
 			twoColumnsRightOneColumnFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightonecolumnfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightonecolumnfooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -516,7 +516,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -525,12 +525,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 3
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
 										colPos = 2
 									}
 								}
@@ -538,7 +538,7 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 										colspan = 4
 									}
@@ -548,10 +548,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightOneColumnFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightOneColumnFooter.svg
 			}
 			twoColumnsRightTwoColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrighttwocolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrighttwocolumnsfooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -560,7 +560,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -569,12 +569,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 3
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
 										colPos = 2
 									}
 								}
@@ -582,12 +582,12 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 										colspan = 2
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 										colspan = 2
 									}
@@ -597,10 +597,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightTwoColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightTwoColumnsFooter.svg
 			}
 			twoColumnsRightThreeColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightthreecolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightthreecolumnsfooter
 				config {
 					backend_layout {
 						colCount = 3
@@ -609,7 +609,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 3
 									}
@@ -618,12 +618,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 2
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
 										colPos = 2
 									}
 								}
@@ -631,15 +631,15 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 								}
@@ -648,10 +648,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightThreeColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightThreeColumnsFooter.svg
 			}
 			twoColumnsRightFourColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightfourcolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightfourcolumnsfooter
 				config {
 					backend_layout {
 						colCount = 4
@@ -660,7 +660,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 4
 									}
@@ -669,12 +669,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 3
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
 										colPos = 2
 									}
 								}
@@ -682,19 +682,19 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 									4 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
 										colPos = 13
 									}
 								}
@@ -703,10 +703,10 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightFourColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightFourColumnsFooter.svg
 			}
 			twoColumnsRightSixColumnsFooter {
-				title = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightsixcolumnsfooter
+				title = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.twocolumnsrightsixcolumnsfooter
 				config {
 					backend_layout {
 						colCount = 6
@@ -715,7 +715,7 @@ mod {
 							1 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.hero-unit
 										colPos = 5
 										colspan = 6
 									}
@@ -724,12 +724,12 @@ mod {
 							2 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.main-content
 										colspan = 4
 										colPos = 0
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.right
 										colPos = 2
 										colspan = 2
 									}
@@ -739,27 +739,27 @@ mod {
 							3 {
 								columns {
 									1 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer1
 										colPos = 10
 									}
 									2 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer2
 										colPos = 11
 									}
 									3 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer3
 										colPos = 12
 									}
 									4 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer4
 										colPos = 13
 									}
 									5 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer5
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer5
 										colPos = 14
 									}
 									6 {
-										name = LLL:EXT:wsbootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer6
+										name = LLL:EXT:ws_bootstrap/Resources/Private/Language/Backend.xlf:backend_layout.footer6
 										colPos = 15
 									}
 								}
@@ -768,7 +768,7 @@ mod {
 					}
 
 				}
-				icon = EXT:wsbootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightSixColumnsFooter.svg
+				icon = EXT:ws_bootstrap/Resources/Public/Images/BackendLayouts/twoColumnsRightSixColumnsFooter.svg
 			}
 		}
 	}

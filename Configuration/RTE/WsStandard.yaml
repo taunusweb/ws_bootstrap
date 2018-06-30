@@ -8,14 +8,14 @@ imports:
 # For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
 editor:
   externalPlugins:
-    wsbootstrap_table:
-      resource: "EXT:wsbootstrap/Resources/Public/CKEditor/Plugins/Table/plugin.js"
+    ws_bootstrap_table:
+      resource: "EXT:ws_bootstrap/Resources/Public/CKEditor/Plugins/Table/plugin.js"
 
   config:
     allowedContent: true
     format_tags: "p;h2;h3;h4"
 
-    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:wsbootstrap/Resources/Public/Css/RTE.css"]
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:ws_bootstrap/Resources/Public/Css/RTE.css"]
 
     stylesSet:
       - { name: "Button", element: "span", attributes: { 'class': 'btn btn-primary' }}
@@ -42,7 +42,7 @@ editor:
 
     extraPlugins:
       - justify
-      - wsbootstrap_table
+      - ws_bootstrap_table
 
     removePlugins:
       - image

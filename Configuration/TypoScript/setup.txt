@@ -1,1 +1,1 @@
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:wsbootstrap/Configuration/TypoScript/Library/" extensions="t3s">
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ws_bootstrap/Configuration/TypoScript/Library/" extensions="t3s">

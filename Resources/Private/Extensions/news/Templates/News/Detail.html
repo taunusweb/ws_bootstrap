@@ -25,7 +25,9 @@
 					</n:titleTag>
 				</f:else>
 			</f:if>
-			<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+			<f:if condition="{settings.detail.showMetaTags}">
+				<f:render partial="Detail/Opengraph" arguments="{newsItem: newsItem, settings:settings}" />
+			</f:if>
 		</n:format.nothing>
 
 		<f:if condition="{settings.detail.showPrevNext}">
@@ -51,7 +53,7 @@
 			</n:simplePrevNext>
 		</f:if>
 
-		<f:if condition="{newsItem.media}">
+		<f:if condition="{newsItem.mediaNonPreviews}">
 			<f:then>
 				<f:render section="headline" arguments="{_all}" />
 				<div class="row">
@@ -59,11 +61,9 @@
 						<f:render section="inner-content" arguments="{_all}" />
 					</div>
 					<div class="col-md-4">
-						<f:for each="{newsItem.media}" as="mediaElement">
+						<f:for each="{newsItem.mediaNonPreviews}" as="mediaElement">
 							<div class="thumbnail">
-								<a href="{f:uri.image(image:mediaElement, width:'{settings.detail.media.image.lightbox.width}', height:'{settings.detail.media.image.lightbox.height}')}" title="{mediaElement.title}" class="{settings.detail.media.image.lightbox.class}" rel="{settings.detail.media.image.lightbox.rel}">
-								<f:media file="{mediaElement}" class="img-fluid" />
-								</a>
+								<f:media file="{mediaElement}" class="img-responsive" />
 								<f:if condition="{mediaElement.description}">
 									<div class="caption">
 										{mediaElement.description}
@@ -83,11 +83,12 @@
 </f:section>
 
 <f:section name="headline">
-	<h1 itemprop="headline">{newsItem.title}</h1>
+	<h1 itemprop="headline" id="jobtitle">{newsItem.title}</h1>
+	<f:render partial="General/AdditionalInformation" arguments="{settings:settings,newsItem:newsItem}" />
 </f:section>
 
 <f:section name="inner-content">
-	<n:renderMedia news="{newsItem}" imgClass="img-fluid" videoClass="video-wrapper" audioClass="audio-wrapper">
+	<n:renderMedia news="{newsItem}" imgClass="img-responsive" videoClass="video-wrapper" audioClass="audio-wrapper">
 		<f:if condition="{newsItem.teaser}">
 			<!-- teaser -->
 			<div class="lead" itemprop="description">
@@ -108,7 +109,7 @@
 
 	<f:if condition="{settings.backPid}">
 		<!-- Link Back -->
-		<f:link.page class="btn btn-primary" pageUid="{settings.backPid}">
+		<f:link.page class="btn btn-default" pageUid="{settings.backPid}">
 			<f:translate key="back-link" />
 		</f:link.page>
 	</f:if>
@@ -132,6 +133,14 @@
 	</f:if>
 
 
+	<f:comment>
+		Various options exist to fetch different related information:
+		- {newsItem.allRelatedSorted}: all related news, related und related from, sorted by date
+		- {newsItem.related}: all related
+		- {newsItem.relatedSorted}: all related, sorted by date
+		- {newsItem.relatedFrom}: all related from
+		- {newsItem.relatedFromSorted}: all related from, sorted by date
+	</f:comment>
 	<f:if condition="{newsItem.allRelatedSorted}">
 		<!-- Related news records -->
 		<div class="news-related news-related-news">

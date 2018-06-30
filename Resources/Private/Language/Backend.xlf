@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-26T10:17:00Z" product-name="wsbootstrap">
+	<file source-language="en" datatype="plaintext" original="messages" date="2015-11-26T10:17:00Z" product-name="ws_bootstrap">
 		<header/>
 		<body>
 			<trans-unit id="backend_layout.default" xml:space="preserve">
@@ -80,6 +80,9 @@
 			</trans-unit>
 			<trans-unit id="backend_layout.footer6" xml:space="preserve">
 				<source>Footer Column 6</source>
+			</trans-unit>
+			<trans-unit id="archive_page_type" xml:space="preserve">
+				<source>Megamenu</source>
 			</trans-unit>
 	</body>
 	</file>

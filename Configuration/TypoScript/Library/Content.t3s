@@ -1,13 +1,13 @@
 lib.contentElement.templateRootPaths{
-	20 = EXT:wsbootstrap/Resources/Private/Extensions/fluid_styled_content/Templates/
+	20 = EXT:ws_bootstrap/Resources/Private/Extensions/fluid_styled_content/Templates/
 }
 
 
 lib.contentElement.partialRootPaths{
-	20 = EXT:wsbootstrap/Resources/Private/Extensions/fluid_styled_content/Partials/
+	20 = EXT:ws_bootstrap/Resources/Private/Extensions/fluid_styled_content/Partials/
 }
 
 lib.contentElement.layoutRootPaths{
-	20 = EXT:wsbootstrap/Resources/Private/Extensions/fluid_styled_content/Layouts/
+	20 = EXT:ws_bootstrap/Resources/Private/Extensions/fluid_styled_content/Layouts/
 }
 

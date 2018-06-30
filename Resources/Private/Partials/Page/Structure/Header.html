@@ -8,23 +8,21 @@
 	</div>
 	</f:if>
 	<div class="headerBackground">
-		<div class="container">
-			<nav class="navbar navbar-expand-md navbar-light" role="navigation" id="mainNavigation">
+			<nav class="navbar fixed-top navbar-expand-md border-bottom" role="navigation" id="mainNavigation">
+				<div class="container">
 				<f:cObject typoscriptObjectPath="lib.homelink"/>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<f:if condition="{settings.megamenu.enable}">
-					<f:then>
 				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 					<ul class="mega navbar-nav">
-						<f:cObject typoscriptObjectPath="lib.megaMenu"/>
+						<f:render partial="Navigation/Main" arguments="{_all}"/>
 					</ul>
 				<f:if condition="{settings.search.enable}">
 				<div class="navbar-nav ml-auto mb-3 mb-sm-0" >
 					<div class="nav-item dropdown">
-						<a cclass="nav-link dropdown-toggle" href="#" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fa fa-search fa-lg"></i>
+						<a class="nav-link" href="#" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fal fa-search fa-lg"></i>
 						</a>
 						<div class="dropdown-menu dropdown-menu-right search" aria-labelledby="dropdownSearchButton">
 							<f:cObject typoscriptObjectPath="lib.searchbox_html"/>
@@ -33,31 +31,9 @@
 				</div>
 				</f:if>
 				</div>
-					</f:then>
-					<f:else>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-					<ul class="nav navbar-nav">
-					<f:cObject typoscriptObjectPath="lib.navbarBootstrap"/>
-					</ul>
-					<f:if condition="{settings.search.enable}">
-					<div class="navbar-nav ml-auto mb-3 mb-sm-0" >
-						<div class="nav-item dropdown">
-							<a cclass="nav-link dropdown-toggle" href="#" id="dropdownSearchButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								<i class="fa fa-search fa-lg"></i>
-							</a>
-							<div class="dropdown-menu dropdown-menu-right search" aria-labelledby="dropdownSearchButton">
-								<f:cObject typoscriptObjectPath="lib.searchbox_html"/>
-							</div>
-						</div>
-					</div>
-					</f:if>
 				</div>
-					</f:else>
-				</f:if>
 			</nav>
-
-		</div>
-
 	</div>
 </div>
+
 

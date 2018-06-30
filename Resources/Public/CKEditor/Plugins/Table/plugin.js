@@ -2,7 +2,7 @@
 
 (function() {
 
-	CKEDITOR.plugins.add('wsbootstrap_table', {
+	CKEDITOR.plugins.add('ws_bootstrap_table', {
 		init: function(editor) {
 			editor.on('removeFormatCleanup', function(event) {
 				var element = event.data;

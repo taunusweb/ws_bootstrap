@@ -1,10 +1,10 @@
 plugin.tx_news {
 		settings {
 			displayDummyIfNoMedia = 0
-			
+
 			detail {
 				showSocialShareButtons = 0
 				}
-			
+
 		}
 	}

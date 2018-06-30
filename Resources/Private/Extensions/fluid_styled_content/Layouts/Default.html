@@ -7,9 +7,21 @@
 				<f:if condition="{data._LOCALIZED_UID}">
 					<a id="c{data._LOCALIZED_UID}"></a>
 				</f:if>
+				<f:if condition="{data.layout} == '7'">
+					<f:render section="Before" optional="true">
+						<f:render partial="DropIn/Before/CardMain" arguments="{_all}" />
+					</f:render>
+				</f:if>
+				<f:if condition="{data.layout} == '8'">
 				<f:render section="Before" optional="true">
-					<f:render partial="DropIn/Before/All" arguments="{_all}" />
+					<f:render partial="DropIn/Before/CardAside" arguments="{_all}" />
 				</f:render>
+				</f:if>
+				<f:if condition="{data.layout} == '9'">
+					<f:render section="Before" optional="true">
+						<f:render partial="DropIn/Before/CollapseForm" arguments="{_all}" />
+					</f:render>
+				</f:if>
 				<f:render section="Header" optional="true">
 					<f:render partial="Header/All" arguments="{_all}" />
 				</f:render>
@@ -17,9 +29,16 @@
 				<f:render section="Footer" optional="true">
 					<f:render partial="Footer/All" arguments="{_all}" />
 				</f:render>
+				<f:if condition="{data.layout} == '7'">
 				<f:render section="After" optional="true">
 					<f:render partial="DropIn/After/All" arguments="{_all}" />
 				</f:render>
+				</f:if>
+				<f:if condition="{data.layout} == '8'">
+					<f:render section="After" optional="true">
+						<f:render partial="DropIn/After/CardAside" arguments="{_all}" />
+					</f:render>
+				</f:if>
 			</div>
 
 		</f:then>

@@ -5,5 +5,5 @@
 
 ## Installation ##
 
-* Über github taunusweb/wsbootstrap
+* Über github taunusweb/ws_bootstrap
 

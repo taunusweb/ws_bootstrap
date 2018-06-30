@@ -5,6 +5,9 @@
 
 lib.megaMenu = HMENU
 lib.megaMenu {
+
+	special = list
+	special.value = 2
 	1 = TMENU
 	1 {
 		expAll = 1
@@ -47,13 +50,13 @@ lib.megaMenu {
 		expAll = 1
 		# Im Megemanu den NO-Zustand der zweiten Ebene am besten vermeiden...
 		NO = 1
-		NO.allWrap = <h4>|</h4>
-		NO.wrapItemAndSub = <div class="test">|</div>
+		NO.allWrap = <li class="header-link">|</li>
+		NO.wrapItemAndSub = <ul>|</ul>
 		NO.ATagTitle.field = abstract // description // title
 
 		IFSUB = 1
-		IFSUB.doNotLinkIt = 1
-		IFSUB.allWrap = <h4>|</h4>
+		IFSUB.doNotLinkIt = 0
+		IFSUB.allWrap = <li class="header-link">|</li>
 		IFSUB.wrapItemAndSub = <ul> | </ul>
 		IFSUB.wrapItemAndSub.insertData = 1
 		IFSUB.ATagTitle.field = abstract // description // title
@@ -176,6 +179,10 @@ lib.navbar {
 
 lib.navbarBootstrap = HMENU
 lib.navbarBootstrap {
+
+	special = list
+	special.value = 3,4,5,6
+
 	1 = TMENU
 	1 {
 		expAll = 1
@@ -226,32 +233,32 @@ lib.navbarBootstrap {
 
 lib.navBootstrap = HMENU
 lib.navBootstrap {
-	entryLevel = 1
+	entryLevel = 2
 
 	1 = TMENU
 	1 {
 		expAll = 1
 
-
-		NO.allWrap = <li>|</li>
+		NO.allWrap = <li class="nav-item">|</li>
 		NO.ATagTitle.field = subtitle // abstract // description // title
+		NO.ATagParams = class="nav-link"
 
 		ACT = 1
-		ACT.allWrap = <li class="active">|</li>
+		ACT.allWrap = <li class="nav-item active">|</li>
 		ACT.ATagTitle.field = subtitle // abstract // description // title
+		ACT.ATagParams = class="nav-link"
 
 		CUR = 1
 		CUR.doNotLinkIt = 1
-		CUR.allWrap = <li class="active">|</li>
+		CUR.allWrap = <li class="nav-item active"><span class="nav-link"|</span></li>
 		CUR.ATagTitle.field = subtitle // abstract // description // title
 
 
-		wrap = <ul class="nav sidebar-nav">|</ul>
+		wrap = <ul class="nav flex-column">|</ul>
 	}
 
 }
 
-lib.navBootstrap >
 
 #Ankermenü zweite Ebene
 lib.anchormenu = CONTENT
@@ -303,8 +310,8 @@ lib.navOne {
 
 }
 
-lib.navFLT = HMENU
-lib.navFLT {
+lib.navDRK = HMENU
+lib.navDRK {
 	special = directory
 	special.value = 2
 
@@ -325,8 +332,8 @@ lib.navFLT {
 
 }
 
-lib.navFLTtwo = HMENU
-lib.navFLTtwo {
+lib.navDRKtwo = HMENU
+lib.navDRKtwo {
 	special = list
 	special.value = 3,4
 

@@ -75,19 +75,19 @@ html {
 	padding: 1.07143rem;
 }
 
-.u-accordion__control-icon i:nth-child(1) {
+.u-accordion__control-icon svg:nth-child(1) {
 	display: none;
 }
 
-.collapsed .u-accordion__control-icon i:nth-child(1) {
+.collapsed .u-accordion__control-icon svg:nth-child(1) {
 	display: inline;
 }
 
-.u-accordion__control-icon i:nth-child(2) {
+.u-accordion__control-icon svg:nth-child(2) {
 	display: inline;
 }
 
-.collapsed .u-accordion__control-icon i:nth-child(2) {
+.collapsed .u-accordion__control-icon svg:nth-child(2) {
 	display: none;
 }
 
@@ -157,3 +157,5 @@ html {
 	}
 
 }
+
+

@@ -57,7 +57,6 @@ lib.dynamicContentSlide.20.slide = -1
 # Default PAGE object:
 page = PAGE
 page {
-
 	## Favicon
 	shortcutIcon = {$page.theme.favicon.file}
 
@@ -67,48 +66,34 @@ page {
 
 	## CSS Dateien laden
 	includeCSS {
-		bootstrapmin = typo3conf/ext/wsbootstrap/Resources/Public/Css/bootstrap.min.css
-		bootstrapmin.disableCompression = 1
-		fscstyles = typo3conf/ext/wsbootstrap/Resources/Public/Css/fscstyles.css
-		offcanvas = typo3conf/ext/wsbootstrap/Resources/Public/Css/offcanvas.css
-		fontawsome = //use.fontawesome.com/releases/v5.0.10/css/all.css
-		fontawsome.external = 1
-		fontawsome.integrity = sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg
-		fontawsome.crossorigin = anonymous
-		magnificpopup = typo3conf/ext/wsbootstrap/Resources/Public/Plugins/magnificpopup/magnific-popup.css
+		fscstyles = typo3conf/ext/ws_bootstrap/Resources/Public/Css/fscstyles.css
+		offcanvas = typo3conf/ext/ws_bootstrap/Resources/Public/Css/menu.css
+		magnificpopup = typo3conf/ext/ws_bootstrap/Resources/Public/Plugins/magnificpopup/magnific-popup.css
 	}
 
 
 	includeJSFooterlibs {
-		jQuery = //code.jquery.com/jquery-3.2.1.slim.min.js
+		jQuery = typo3conf/ext/ws_bootstrap/Resources/Public/Plugins/jquery/jquery-slim.3-3-1.min.js
 		jQuery {
-			integrity = sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN
-			external = 1
-			forceOnTop = 1
 			disableCompression = 1
-			excludeFromConcatenation = 1
 		}
-		Popper = //cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+		Popper = typo3conf/ext/ws_bootstrap/Resources/Public/Plugins/popper/popper.1-14-3.min.js
 		Popper {
-			integrity = sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q
-			external = 1
 			disableCompression = 1
-			excludeFromConcatenation = 1
 		}
-		bootstrap = //maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+		bootstrap = typo3conf/ext/ws_bootstrap/Resources/Public/Plugins/bootstrap/js/bootstrap.4-1-1.min.js
 		bootstrap {
-			external = 1
-			integrity = sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl
 			disableCompression = 1
-			excludeFromConcatenation = 1
 		}
-		magnificpopup = typo3conf/ext/wsbootstrap/Resources/Public/Plugins/magnificpopup/jquery.magnific-popup.min.js
+		magnificpopup = typo3conf/ext/ws_bootstrap/Resources/Public/Plugins/magnificpopup/jquery.magnific-popup.min.js
 		magnificpopup.disableCompression = 1
-		totop = typo3conf/ext/wsbootstrap/Resources/Public/JavaScript/back-to-top.js
+		totop = typo3conf/ext/ws_bootstrap/Resources/Public/JavaScript/back-to-top.js
+		fontawesome = typo3conf/ext/ws_bootstrap/Resources/Public/Plugins/fontawesome/js/fontawesome-all.js
+
 	}
 
 	includeJSFooter {
-		main = typo3conf/ext/wsbootstrap/Resources/Public/JavaScript/main.js
+		main = typo3conf/ext/ws_bootstrap/Resources/Public/JavaScript/main.js
 	}
 
 	bodyTagCObject = COA
@@ -156,24 +141,88 @@ page {
 
 	10 = FLUIDTEMPLATE
 	10 {
-		extbase.controllerExtensionName = wsbootstrap
+		extbase.controllerExtensionName = ws_bootstrap
 		templateName < lib.templateName
 
 		layoutRootPaths {
-			0 = EXT:wsbootstrap/Resources/Private/Layouts/
+			0 = EXT:ws_bootstrap/Resources/Private/Layouts/
 		}
 		partialRootPaths {
-			0 = EXT:wsbootstrap/Resources/Private/Partials/
+			0 = EXT:ws_bootstrap/Resources/Private/Partials/Page/
 		}
 		templateRootPaths {
-			0 = EXT:wsbootstrap/Resources/Private/Templates/
+			0 = EXT:ws_bootstrap/Resources/Private/Templates/
 		}
+
+		##########################
+		### DATA PREPROCESSING ###
+		##########################
+
+		dataProcessing {
+			# pagemedia
+			5 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+			5 {
+				references.fieldName = media
+				as = pagemedia
+			}
+
+			10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			10 {
+				special = directory
+				special.value = 1
+				levels = 6
+				includeSpacer = 1
+				as = menuMain
+			}
+
+			15 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			15 {
+				special = list
+				special.value = 2,3,4,5
+				levels = 1
+				includeSpacer = 1
+				as = menuMainTwo
+			}
+
+			20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			20 {
+				special = list
+				special.value = 24,25,6,7,8
+				levels = 1
+				as = menuMeta
+			}
+
+			30 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			30 {
+				levels = 2
+				entryLevel = 2
+				expandAll = 0
+				includeSpacer = 1
+				as = menuSub
+			}
+
+			40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			40 {
+				special = language
+				special.value = {$template.languages}
+				as = menuLanguage
+			}
+
+			50 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			50 {
+				special = rootline
+				special.range = 0|-1
+				includeNotInMenu = 1
+				as = menuBreadcrumb
+			}
+		}
+
 		settings {
 			heroslide {
 				enable = {$page.theme.heroslide.enable}
 			}
-			megamenu {
-				enable = {$page.theme.megamenu.enable}
+			herofullwidth {
+				enable = {$page.theme.herofullwidth.enable}
 			}
 			skiplinks {
 				enable = {$page.theme.skiplinks.enable}
@@ -186,6 +235,7 @@ page {
 				enable = {$page.theme.search.enable}
 			}
 		}
+
 	}
 
 }
