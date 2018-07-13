@@ -5,6 +5,9 @@ plugin.tx_news {
 			detail {
 				showSocialShareButtons = 0
 				}
-
+			link {
+				skipControllerAndAction = 1
+			}
 		}
 	}
+
