@@ -16,14 +16,21 @@ TCEFORM {
 			addItems.7 = Ansprechpartner
 			addItems.8 = Ansprechpartner rechts
 			addItems.10 = Galerie
+			addItems.11 = Einzelbild für Header
 		}
 		frame_class {
 			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
 			addItems {
 				vertical-nav = Vertikale Navigation
 			}
+		}
+		imagecols {
+			removeItems = 5,7,8
+		}
 	}
 }
+
+TCAdefaults.tt_content.imagecols = 1
 
 TCEMAIN {
 	permissions {

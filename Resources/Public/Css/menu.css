@@ -28,6 +28,10 @@ nav a {
 	text-decoration: none;
 }
 
+nav .breadcrumb a {
+	display: inline;
+}
+
 nav ul li {
 	list-style: none;
 	transition: 0.5s;

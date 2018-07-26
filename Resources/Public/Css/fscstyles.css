@@ -158,4 +158,8 @@ html {
 
 }
 
+.singleImage img {
+	width: 100% !important;
+}
+
 
