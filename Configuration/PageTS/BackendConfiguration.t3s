@@ -16,6 +16,8 @@ TCEFORM {
 			addItems.7 = Ansprechpartner
 			addItems.8 = Ansprechpartner rechts
 			addItems.10 = Galerie
+			addItems.11 = 3 Kacheln
+			addItems.12 = 4 Kacheln
 		}
 		frame_class {
 			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right

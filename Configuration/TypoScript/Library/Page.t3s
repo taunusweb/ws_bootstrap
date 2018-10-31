@@ -201,6 +201,15 @@ page {
 				as = menuSub
 			}
 
+			35 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+			35 {
+				levels = 1
+				entryLevel = 1
+				expandAll = 1
+				includeSpacer = 1
+				as = menuSubOne
+			}
+
 			40 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
 			40 {
 				special = language
