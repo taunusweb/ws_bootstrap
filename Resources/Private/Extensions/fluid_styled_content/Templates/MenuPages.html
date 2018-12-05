@@ -36,6 +36,7 @@
 					<div class="{f:if(condition:iterator.isOdd, then: 'col-sm-8 col-12')}{f:if(condition:iterator.isEven, then: 'col-sm-4 col-12')}">
 						<f:if condition="page.files.0">
 							<a href="{page.link}"><f:image image="{page.files.0}" class="img-fluid"  alt="{page.title}" /></a>
+							<div class="copyright-div"><span class="copyright-info">{page.files.0.properties.copyright}</span></div>
 						</f:if>
 						<a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">
 						<h3>
