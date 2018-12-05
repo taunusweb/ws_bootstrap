@@ -11,6 +11,9 @@
 			<f:then>
 				<f:render partial="Media/Type/GalleryImage" arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
 			</f:then>
+			<f:else if="{data.layout}==11">
+				<f:render partial="Media/Type/SingleImage" arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
+			</f:else>
 			<f:else>
 				<f:render partial="Media/Type/Image" arguments="{file: file, dimensions: dimensions, data: data, settings: settings}" />
 			</f:else>
