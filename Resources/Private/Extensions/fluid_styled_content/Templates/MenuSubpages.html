@@ -2,6 +2,27 @@
 <f:layout name="Default" />
 <f:section name="Main">
 	<f:if condition="{menu}">
+		<f:if condition="{data.frame_class}==kachel-nav">
+			<f:then>
+				<div class="row">
+					<f:for each="{menu}" as="page">
+						<div class="{f:if(condition:'{data.layout}==11',then:'col-md-4')}{f:if(condition:'{data.layout}==12',then:'col-sm-6 col-md-3')}">
+							<f:if condition="page.files.0">
+								<a href="{page.link}"><f:image image="{page.files.0}" class="img-fluid"  alt="{page.title}" /></a>
+								<div class="copyright-div"><span class="copyright-info">{page.files.0.properties.copyright}</span></div>
+							</f:if>
+							<a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">
+							<h3>{page.title}</h3>
+							</a>
+							<f:if condition="{page.data.abstract}">
+								<p class="abstract"><f:format.html>{page.data.abstract}&hellip; <a href="{page.link}">weiterlesen</a></f:format.html></p>
+							</f:if>
+						</div>
+					</f:for>
+				</div>
+				<hr />
+			</f:then>
+			<f:else>
 		<f:if condition="{data.frame_class}==vertical-nav">
 			<f:then>
 				<ul class="nav flex-column">
@@ -18,6 +39,9 @@
 				</li>
 			</f:for>
 		</ul>
+			</f:else>
+	</f:if>
+
 	</f:if>
 
 </f:section>
