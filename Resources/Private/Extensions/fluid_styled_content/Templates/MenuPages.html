@@ -3,22 +3,87 @@
 <f:section name="Main">
 
 	<f:if condition="{menu}">
-		<div class="row">
-			<f:for each="{menu}" as="page">
-				<div class="col-sm-4">
-					<f:if condition="page.files.0">
-						<a href="{page.link}"><f:image image="{page.files.0}" class="img-fluid"  alt="{page.title}" /></a>
+		<f:if condition="{data.layout}==14">
+			<f:then>
+		<f:for each="{menu}" as="page" iteration="iterator">
+			<div>
+				<f:if condition="page.files.0">
+					<a href="{page.link}"><f:image image="{page.files.0}" class="img-fluid"  alt="{page.title}" /></a>
+				</f:if>
+				<a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">
+				<h3>
+					<f:if condition="{page.data.subtitle}">
+						<f:then>
+							{page.data.subtitle}
+						</f:then>
+						<f:else>
+							{page.title}
+						</f:else>
 					</f:if>
+				</h3>
+				</a>
+				<f:if condition="{page.data.abstract}">
+					<p class="abstract"><f:format.html>{page.data.abstract}&hellip; <a href="{page.link}">weiterlesen</a></f:format.html></p>
+				</f:if>
+			</div>
+		</f:for>
+			</f:then>
+			<f:else>
+		<div class="row">
+			<f:if condition="{data.layout}==13">
+				<f:then>
+				<f:for each="{menu}" as="page" iteration="iterator">
+					<div class="{f:if(condition:iterator.isOdd, then: 'col-sm-8 col-12')}{f:if(condition:iterator.isEven, then: 'col-sm-4 col-12')}">
+						<f:if condition="page.files.0">
+							<a href="{page.link}"><f:image image="{page.files.0}" class="img-fluid"  alt="{page.title}" /></a>
+						</f:if>
 						<a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">
-						<h3>{page.title}</h3>
+						<h3>
+							<f:if condition="{page.data.subtitle}">
+								<f:then>
+									{page.data.subtitle}
+								</f:then>
+								<f:else>
+									{page.title}
+								</f:else>
+							</f:if>
+						 </h3>
 						</a>
 						<f:if condition="{page.data.abstract}">
 							<p class="abstract"><f:format.html>{page.data.abstract}&hellip; <a href="{page.link}">weiterlesen</a></f:format.html></p>
 						</f:if>
-				</div>
-			</f:for>
+					</div>
+				</f:for>
+				</f:then>
+				<f:else>
+				<f:for each="{menu}" as="page">
+					<div class="{f:if(condition:'{data.layout}==11',then:'col-md-4')}{f:if(condition:'{data.layout}==12',then:'col-sm-6 col-md-3')}">
+						<f:if condition="page.files.0">
+							<a href="{page.link}"><f:image image="{page.files.0}" class="img-fluid"  alt="{page.title}" /></a>
+						</f:if>
+							<a href="{page.link}"{f:if(condition: page.target, then: ' target="{page.target}"')} title="{page.title}">
+						<h3>
+							<f:if condition="{page.data.subtitle}">
+								<f:then>
+									{page.data.subtitle}
+								</f:then>
+								<f:else>
+									{page.title}
+								</f:else>
+							</f:if>
+						</h3>
+							</a>
+							<f:if condition="{page.data.abstract}">
+								<p class="abstract"><f:format.html>{page.data.abstract}&hellip; <a href="{page.link}">weiterlesen</a></f:format.html></p>
+							</f:if>
+					</div>
+				</f:for>
+			</f:else>
+		</f:if>
 		</div>
-		<hr />
+				<hr />
+			</f:else>
+		</f:if>
 	</f:if>
 
 </f:section>

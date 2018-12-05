@@ -4,6 +4,17 @@ plugin.tx_news {
 
 			detail {
 				showSocialShareButtons = 0
+				media {
+					image {
+						lightbox {
+							enabled = {$styles.content.textmedia.linkWrap.lightboxEnabled}
+							class = {$styles.content.textmedia.linkWrap.lightboxCssClass}
+							width = {$styles.content.textmedia.linkWrap.width}
+							height = {$styles.content.textmedia.linkWrap.height}
+							rel = lightbox[myImageSet]
+						}
+					}
+				}
 				}
 			link {
 				skipControllerAndAction = 1

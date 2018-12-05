@@ -66,6 +66,7 @@ nav div.dropdown-menu li.header-link {
 	margin-bottom: 15px;
 	font-size: 1.1rem;
 	font-weight: 700;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 nav div.dropdown-menu h4.secondHeader {

@@ -16,21 +16,18 @@ TCEFORM {
 			addItems.7 = Ansprechpartner
 			addItems.8 = Ansprechpartner rechts
 			addItems.10 = Galerie
-			addItems.11 = Einzelbild für Header
+			addItems.11 = 3 Kacheln
+			addItems.12 = 4 Kacheln
+			addItems.13 = 2 Kacheln 2/1
+			addItems.14 = Kachel(n) ohne Trenner
 		}
 		frame_class {
 			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
 			addItems {
 				vertical-nav = Vertikale Navigation
 			}
-		}
-		imagecols {
-			removeItems = 5,7,8
-		}
 	}
 }
-
-TCAdefaults.tt_content.imagecols = 1
 
 TCEMAIN {
 	permissions {
@@ -39,3 +36,4 @@ TCEMAIN {
 }
 
 RTE.default.preset = ws_standard
+
