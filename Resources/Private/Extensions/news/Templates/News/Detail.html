@@ -107,6 +107,10 @@
 		</div>
 	</n:renderMedia>
 
+	<n:link newsItem="{newsItem}" settings="{settings}" title="{newsItem.title}" configuration="{additionalParams: '&type=28032013'}">
+		Download PDF
+	</n:link>
+
 	<f:if condition="{settings.backPid}">
 		<!-- Link Back -->
 		<f:link.page class="btn btn-default" pageUid="{settings.backPid}">

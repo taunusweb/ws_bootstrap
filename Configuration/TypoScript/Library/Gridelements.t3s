@@ -5,11 +5,11 @@ tt_content.gridelements_pi1.20.10.setup {
   1 {
     columns {
       # colPos ID
-      100 < .default
-      100.wrap = <div class="col-12 col-sm-6">|</div>
+      0 < .default
+      0.wrap = <div class="col-12 col-sm-6">|</div>
       # colPos ID
-      120 < .default
-      120.wrap = <div class="col-12 col-sm-6">|</div>
+      2 < .default
+      2.wrap = <div class="col-12 col-sm-6">|</div>
 
     }
     # Optional kann das gesamte Element noch einen wrap bekommen

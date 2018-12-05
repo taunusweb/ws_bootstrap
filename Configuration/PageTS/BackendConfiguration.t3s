@@ -18,6 +18,8 @@ TCEFORM {
 			addItems.10 = Galerie
 			addItems.11 = 3 Kacheln
 			addItems.12 = 4 Kacheln
+			addItems.13 = 2 Kacheln 2/1
+			addItems.14 = Kachel(n) ohne Trenner
 		}
 		frame_class {
 			removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
@@ -34,3 +36,4 @@ TCEMAIN {
 }
 
 RTE.default.preset = ws_standard
+
