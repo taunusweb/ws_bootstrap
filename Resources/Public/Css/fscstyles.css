@@ -44,10 +44,13 @@
 	position: fixed;
 	bottom:20px;
 	right:20px;
-	background:#469c46;
-	padding: 0 0.7em 0.3em;
+	background:#0075a9;
+	padding: 0 0.7em 0.2em;
 	color: #fff;
 	font-size: 20px;
+}
+.back-to-top .svg-inline--fa {
+	margin-right: 0;
 }
 .back-to-top:hover {
 	background: #376b9c;
@@ -162,4 +165,17 @@ html {
 	width: 100% !important;
 }
 
+.copyright-div {
+	position: relative;
+}
+
+.copyright-info {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	color: #000;
+	font-size: 0.8rem;
+	background: rgba(255,255,255, 0.7);
+	padding: 0.15rem;
+}
 
